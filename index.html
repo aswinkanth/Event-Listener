@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Listener</title>
+  </head>
+  <style>
+    body {
+      text-align: center;
+    }
+    button {
+      color: white;
+      background-color: chartreuse;
+      font-size: 20px;
+      padding: 20px;
+    }
+    #Mydiv {
+      background-color: red;
+      padding: 25px;
+      margin-top: 30px;
+    }
+  </style>
+  <body>
+    <h1>Welcome to the page</h1>
+    <button onclick="myfunction()">See this message</button>
+    <div id="Mydiv">This website has been hacked</div>
+    <script>
+      function myfunction() {
+        var a = document.getElementById("Mydiv");
+        if (a.style.display == "none") {
+          a.style.display = "block";
+        } else {
+          a.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
